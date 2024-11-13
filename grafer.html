@@ -1,4 +1,4 @@
-<!-- Tobias -->
+
 <style>
     .chart {
         width: 50%;
@@ -23,7 +23,7 @@
         <canvas id="myChart" aria-label="Hello ARIA World" role="img">Your browser doesn't support the canvas element. Try accessing the website through a different one.</canvas>
     </div>
     <br>
-    <input type="button" value="Hi">
+    <input type="button" value="reset">
     <br>
     <select name="period" id="what" onchange="onChangeOptions(this.value)">
         <option value="week" selected>Last week</option>
@@ -40,7 +40,7 @@
             data: {
                 //labels: undefined,
                 datasets: [{
-                    label: 'UV',
+                    label: 'Madaffald pr. uge',
                     data: [],
                     borderWidth: 1
                 }]
@@ -117,8 +117,8 @@
             console.log(c + " " + d);
     
         }
-        const wekkday = new Date()
-        wekkday.setDate(wekkday.getDate() + 7)
+        const weekday = new Date()
+        weekday.setDate(weekday.getDate() + 7)
         update(a = '*')
     
         console.log(document.getElementById("from").value);
