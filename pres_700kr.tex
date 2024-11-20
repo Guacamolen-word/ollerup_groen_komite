@@ -1,0 +1,75 @@
+\documentclass[aspectratio=169,handout]{beamer}
+\usetheme{Frankfurt}
+\usepackage{graphicx}
+\usepackage[danish]{babel}
+\usepackage{tikz}
+\title{Visualisation of consumption at the school}
+\subtitle{As a green comitee project}
+\author{William Laursen}
+%\institute{}
+\date{\today}
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\begin{frame}{Vision}
+\begin{columns}
+\column{.5\textwidth}
+\begin{itemize}
+\item We want to showcase the usage of resources at the school.
+\item Students should be able see usage of resources, with their own eyes
+\item Students should compare the usage of resources to last week
+\item We will show the top three measurable (food waste, power and heat)
+\end{itemize}
+\column{.5\textwidth}
+\centering
+%\begin{block}{title of block}
+
+%\end{block}
+\end{columns}
+\end{frame}
+
+\begin{frame}{the Project}
+\begin{columns}
+\column{.5\textwidth}
+\begin{itemize}
+\item the project involves a bought RaspberryPi (tv-screen are already bought)
+\item A RaspberryPi is a little computer, often used as web-servers
+\item A web-server is a host for a series of digital visuals (aka frontend, code that can be seen)
+\end{itemize}
+\column{.5\textwidth}
+\centering
+\includegraphics[width=\textwidth]{./image.png}
+\end{columns}
+\end{frame}
+\begin{frame}{How does this work?}
+\begin{columns}
+\column{.5\textwidth}
+\begin{itemize}
+    \item RaspberryPi opens a ´SQL HOSTNAME´
+    \item Graph api: Chart.js
+    \item $\mathcal{C}$ = collection of data
+\end{itemize}
+\column{.5\textwidth}
+\centering
+%\begin{block}{title of block}
+\input{data.tex}
+%\end{block}
+\end{columns}
+\end{frame}
+\begin{frame}{Contact}
+\begin{columns}
+\column{.5\textwidth}
+\begin{itemize}
+    \item Follow the project on my github, which I regularly update
+    \item Github:
+\end{itemize}
+\column{.5\textwidth}
+\centering
+%\begin{block}{title of block}
+\includegraphics[width=0.7\textwidth]{./github.eps}
+%\end{block}
+\end{columns}
+\end{frame}
+\end{document}
+
